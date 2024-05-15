@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Menu from "@/components/menu";
 
 export const metadata: Metadata = {
   title: "Zen Slam Poetry",
@@ -13,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <nav>
+          <Menu />
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
