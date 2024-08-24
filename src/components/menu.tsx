@@ -9,32 +9,22 @@ export default function Menu() {
   return (
     <section>
       <ul className={styles.menu}>
-        <li className={styles.li}>
-          <Link href="/" className={styles.item}>
-            Home
-          </Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/leaderboard" className={styles.item}>
-            Leaderboard
-          </Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/collection" className={styles.item}>
-            Collection
-          </Link>
-        </li>
+        <Link href="/" className={styles.item}>
+          <li className={styles.li}>Home</li>
+        </Link>
+        <Link href="/leaderboard" className={styles.item}>
+          <li className={styles.li}>Leaderboard</li>
+        </Link>
+        <Link href="/collection" className={styles.item}>
+          <li className={styles.li}>Collection</li>
+        </Link>
         {/*AuthN */}
-        <li className={styles.li}>
-          <Link href="/signin" className={styles.item}>
-            SignIn
-          </Link>
-        </li>
-        <li className={styles.li}>
-          <Link href="/signup" className={styles.item}>
-            SignUp
-          </Link>
-        </li>
+        <Link href="/signin" className={styles.item}>
+          <li className={styles.li}>SignIn</li>
+        </Link>
+        <Link href="/signup" className={styles.item}>
+          <li className={styles.li}>SignUp</li>
+        </Link>
         {/*<li className={styles.li}>
           <Link href="/submission" className={styles.item}>
             Submit
